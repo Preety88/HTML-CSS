@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_MyLayout</title>
+	<link href="~/CSS/MyStyles.css" rel="stylesheet" />
+	<link href="~/CSS/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+	<!--Header-->>
+	<div class="header">
+		<img src="~/Img/Banner.png" height="131" width="703" >
+	</div>
+
+
+	<!--Menu-->>
+	<div class=" menu">
+		<a href="~/Home/Index"> Home</a>
+		<a href="#">Services</a>
+		<a href="~/Home/Gallery">Gallery</a>
+		<a href="#">Offers</a>
+		<a href="~/Home/Contact Us">Contact Us</a>
+
+
+	</div>
+
+	<!---Content-->
+	<div>
+		@RenderBody()
+	</div>
+
+
+	<!--Footer-->
+	<div>
+
+	</div>
+
+</body>
+</html>
